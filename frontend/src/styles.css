@@ -17,7 +17,7 @@
   --bg-card: rgba(8, 22, 38, 0.88);
 
   /* Glass */
-  --glass-bg: rgba(10, 25, 42, 0.72);
+  --glass-bg: rgba(8, 22, 38, 0.94);
   --glass-border: rgba(96, 165, 250, 0.14);
   --glass-glow: rgba(56, 189, 248, 0.06);
 
@@ -125,8 +125,6 @@ input {
   padding: 20px 28px;
   border: 1px solid var(--glass-border);
   background: var(--glass-bg);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-md), var(--shadow-glow-cyan);
 }
@@ -160,7 +158,6 @@ input {
 .title-icon {
   font-size: 1.3rem;
   color: var(--sky);
-  filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.4));
 }
 
 .hero-subtitle {
@@ -197,7 +194,6 @@ input {
   padding: 14px 16px;
   border-radius: var(--radius-md);
   background: var(--glass-bg);
-  backdrop-filter: blur(12px);
   border: 1px solid var(--glass-border);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
   position: relative;
@@ -264,8 +260,7 @@ input {
   border-radius: var(--radius-xl);
   margin-bottom: 20px;
   border: 1px solid rgba(56, 189, 248, 0.12);
-  background: linear-gradient(135deg, rgba(4, 16, 28, 0.92), rgba(10, 30, 50, 0.88));
-  backdrop-filter: blur(16px);
+  background: linear-gradient(135deg, rgba(4, 16, 28, 0.96), rgba(10, 30, 50, 0.94));
   box-shadow: var(--shadow-lg);
   align-items: center;
 }
@@ -338,10 +333,10 @@ input {
   fill: var(--green);
 }
 
-/* Airplane stays on the path. A looping translate snapped back every 5s
-   and, together with SVG drop-shadows, repainted the whole page. */
+/* Position comes from the SVG transform attribute. A CSS transform here
+   repainted the whole page on each frame. */
 .plane-group {
-  transform: translate(70px, -4px);
+  transform: none;
 }
 
 .plane-body {
@@ -406,7 +401,6 @@ input {
   border-radius: var(--radius-lg);
   border: 1px solid var(--glass-border);
   background: var(--glass-bg);
-  backdrop-filter: blur(20px);
   padding: 18px;
   box-shadow: var(--shadow-md);
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
@@ -491,7 +485,6 @@ input {
   padding: 16px;
   border-radius: var(--radius-md);
   background: var(--glass-bg);
-  backdrop-filter: blur(12px);
   border: 1px solid var(--glass-border);
   display: flex;
   flex-direction: column;

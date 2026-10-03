@@ -306,7 +306,7 @@ function App() {
             <circle cx="316" cy="32" r="5" className="track-node landing" />
 
             {/* Proper airplane shape */}
-            <g className="plane-group">
+            <g className="plane-group" transform="translate(70 -4)">
               {/* Fuselage */}
               <ellipse cx="60" cy="62" rx="24" ry="5" className="plane-body" />
               {/* Nose */}
