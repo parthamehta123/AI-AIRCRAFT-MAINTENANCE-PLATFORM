@@ -35,7 +35,7 @@ spec:
           imagePullPolicy: Always
 
           ports:
-            - containerPort: 8000
+            - containerPort: 8001
 
           # Load AWS credentials from Kubernetes Secret
           envFrom:

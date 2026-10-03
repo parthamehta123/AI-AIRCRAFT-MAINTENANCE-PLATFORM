@@ -35,3 +35,7 @@ spec:
 
           ports:
             - containerPort: 3000
+
+          env:
+            - name: VITE_API_BASE_URL
+              value: http://a1b898229bb394145824f3bbc764a014-1160686867.us-east-1.elb.amazonaws.com
